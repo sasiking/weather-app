@@ -37,4 +37,8 @@ showWeatherData = (weatherData) => {
     document.getElementById("max-temp").innerText = weatherData.main.temp_max;
 }
 
-
+document.addEventListener("keyup", function(event) {
+  if (event.key === 'Enter') {
+      searchCity();
+  }
+});
